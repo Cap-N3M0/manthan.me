@@ -1,0 +1,23 @@
+.circle-grey{
+    height: 500px;
+    width: 500px;
+    background-color: var(--gray);
+    border-radius: 100%;
+
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-weight: bolder;
+
+    text-align: left;
+}
+
+.circle-grey >div:nth-child(1){
+    font-size: 30px;
+}
+
+.circle-grey >div:nth-child(2){
+    font-size: 50px;
+}

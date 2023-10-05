@@ -1,0 +1,19 @@
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero > div {
+    display: flex;
+    /* flex-grow: inherit; */
+    padding: 100px;
+    /* align-items: center; */
+    justify-content: center;
+    
+    font-size: xx-large;
+    line-height: 30px;
+}
+
+.hero-section-right{
+    display: flex;
+}

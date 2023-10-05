@@ -1,18 +1,19 @@
-import { Navbar } from 'react-bootstrap';
-import './Header.css';
 
-import Button from './buttons';
+import {Link} from 'react-router-dom';
+import './header.css';
+
+import Button from './Buttons';
 
 export default function Header(){
     return(
-        <header className='d-flex'>
+        <header className='d-flex flex-wrap '>
             <div className='header-title d-flex justify-content-center col col-10'>
-                <div className='header-item'>PORTFOLIO</div>
-                <div className='header-item'>PROJECTS</div>
-                <div className='header-item'>CONTACT</div>
+                <Link to={'/'} className='header-item' style={{ textDecoration: 'none' }}>PORTFOLIO</Link>
+                <Link to={'/projects'} className='header-item' style={{ textDecoration: 'none' }}>PROJECTS</Link>
+                <Link to={'/contact'} className='header-item' style={{ textDecoration: 'none' }}>CONTACT</Link>
             </div>
             <div className='d-flex col col-2 align-items-center justify-content-center'>
-                <Button> Download CV </Button>
+                <Button type='primary'> Download CV </Button>
             </div>
         </header>
     )

@@ -1,6 +1,7 @@
 header{
     border-bottom: 5px solid var(--blue);
     margin : 0 0 5vh 0;
+    cursor: hand;
 }
 
 header > .header-title{
@@ -9,6 +10,7 @@ header > .header-title{
     font-weight: bolder;
     gap:150px;
     padding: 30px;
+    cursor: hand;
 }
 
 header > .header-title > .header-item{
