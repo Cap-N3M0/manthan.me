@@ -8,10 +8,10 @@ import atom  from '../assets/skills/atom.png';
 import css from '../assets/skills/css.png';
 import java  from '../assets/skills/java.png';
 import js from '../assets/skills/js.png';
-import pythn from '../assets/skills/python.png';
+// import pythn from '../assets/skills/python.png';
 import sql from '../assets/skills/sql-server.png';
 
-import { Card, CardGroup, ListGroup } from 'react-bootstrap';
+import { Card, CardGroup} from 'react-bootstrap';
 
 
 const Projects = () => {
@@ -25,10 +25,10 @@ const Projects = () => {
                         <Card.Title>Front End</Card.Title>
                         <Card.Text>
                             
-                                <img src={html} />
-                                <img src={css} />
-                                <img src={js} />
-                                <img src={atom} />
+                                <img src={html} alt = 'html'/>
+                                <img src={css} alt = 'css'/>
+                                <img src={js} alt = 'js' />
+                                <img src={atom} alt = 'reactjs'/>
                             
                         </Card.Text>
                     </Card.Body>
@@ -39,7 +39,7 @@ const Projects = () => {
                         <Card.Title>Back End</Card.Title>
                         <Card.Text>
                             
-                                <img src={java} />
+                                <img src={java}  alt = 'java'/>
                             
                         </Card.Text>
                     </Card.Body>
@@ -50,7 +50,7 @@ const Projects = () => {
                         <Card.Title>Database</Card.Title>
                         <Card.Text>
                             
-                                <img src={sql} />
+                                <img src={sql} alt='sql' />
                             
                         </Card.Text>
                     </Card.Body>
