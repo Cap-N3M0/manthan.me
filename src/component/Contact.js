@@ -20,21 +20,25 @@ const Contact = () => {
         <form className="col col-12 ">
 
             <div >
-            <label for="name"> NAME
-                <input type="text" id="name"></input>
-            </label>
+                <input type="text" id="name" placeholder=""></input>
+            <label for="name"> NAME 
+            </label><br/>
             </div>
 
             <div>
+                <input type="email" id="email" placeholder=""></input>
             <label for="email">EMAIL 
-                <input type="email" id="email"></input>
-            </label>
+            </label><br/>
             </div>
 
             <div>
-            <label for="message"> YOUR MESSAGE HERE:
-                <textarea id="message" cols={50}></textarea>
-            </label>
+                <input id="message" cols={50} placeholder=""></input>
+            <label for="message"> YOUR MESSAGE HERE
+            </label><br/>
+            </div>
+
+            <div>
+              <input type="submit" name = "bwSend" value={"Send"}></input>
             </div>
         </form>
       </div>

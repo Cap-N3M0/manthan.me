@@ -21,3 +21,43 @@
 .circle-grey >div:nth-child(2){
     font-size: 50px;
 }
+
+
+/* form */
+form > div{
+    margin: 30px 0 20px 0 ; 
+}
+
+
+label{
+    position: absolute;
+    left: 50.8%;
+    
+    transform: 0 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+input {
+    border: none;
+    outline: none;
+    background-color: unset;
+    border-bottom: 1px solid black;
+    font-size: 1rem;
+    
+    min-width: 60vmin;
+}
+
+input[type="submit"]{
+    margin-top: 30px;
+    padding: 2% 5% 2% 5%;
+    border-radius: 20px;
+    width: inherit;
+
+    background-color: var(--blue);
+    color: white;
+    font-weight: bolder;
+}
+
+input:focus + label, input:not(:placeholder-shown) + label{
+    transform: translateY(-1em) scale(0.8);
+}

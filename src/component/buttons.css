@@ -18,8 +18,7 @@
 
 .button > div:hover{
     transform: scale(1.2);
-    background-color: var(--gray);
-    color: var(--blue) !important;
+    /* background-color: var(--gray); */
     cursor: pointer;
 }
 

@@ -3,15 +3,15 @@ import './buttons.css';
 
 const Button = (props) =>{
 
-    const {type, classes} = {...props};
+    const {type, href } = {...props};
 
     return(
         
-        <div className="button " style={classes}>
+        <div className="button ">
                 <div className={type ? type : 'primary'}>
-                    <Link to={'/contact'} style={{ textDecoration: 'none', 'color':'white' }}>
-                    <span>{props.children}</span>
-                    </Link>
+                    <a href={href} style={{ textDecoration: 'none', 'color':'white' }}>
+                    {props.children}
+                    </a>
                 </div>
         </div>
     )   

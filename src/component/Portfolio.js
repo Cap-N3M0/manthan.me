@@ -3,10 +3,12 @@ import Button from './Buttons';
 import './portfolio.css';
 import img from '../assets/manthan-crop.png';
 import {BsInstagram, BsLinkedin, BsWhatsapp} from 'react-icons/bs';
+import Projects from './Projects';
 
 
 const Portfolio = () => {
     return(
+        <>
         <div className='hero'>
             <div className='hero-section-left col-6 row'>
                 <div className='hero-section'>
@@ -38,6 +40,8 @@ const Portfolio = () => {
                 </div>
             </div>
         </div>
+        <Projects />
+        </>
     )
             
 }
