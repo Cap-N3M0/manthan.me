@@ -1,8 +1,10 @@
 
-import {Link} from 'react-router-dom';
-import './header.css';
+
+import './headers.css';
 
 import Button from './MyButtons.js';
+
+import {Link} from 'react-router-dom';
 
 export default function Header(){
     return(
