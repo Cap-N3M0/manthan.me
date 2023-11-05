@@ -2,7 +2,7 @@
 import {Link} from 'react-router-dom';
 import './header.css';
 
-import Button from './Buttons.js';
+import Button from './MyButtons.js';
 
 export default function Header(){
     return(
