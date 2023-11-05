@@ -1,8 +1,6 @@
 import React from  'react';
 import './projects.css';
 
-import { } from 'react-icons/';
-
 import html  from '../assets/skills/html-5.png';
 import atom  from '../assets/skills/atom.png';
 import css from '../assets/skills/css.png';
