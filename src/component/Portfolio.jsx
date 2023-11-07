@@ -1,5 +1,5 @@
 import React from  'react';
-import Button from './MyButtons.js';
+import Button from './RcMyButtons';
 import './portfolio.css';
 import img from '../assets/manthan-crop.png';
 import {BsInstagram, BsLinkedin, BsWhatsapp} from 'react-icons/bs';

@@ -1,0 +1,80 @@
+header {
+  background-color: lightblue;
+  box-shadow: 0 0 20px 0 currentColor;
+}
+
+
+
+header > ul {
+  margin: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3vmin;
+}
+
+header > ul > li:hover {
+  animation: pulse 1s infinite;
+}
+
+header > ul > li > a {
+  text-decoration: none;
+  font-size: 3vmin;
+  font-weight: 500;
+  color: var(--blue);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(26, 120, 172, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 30px rgba(26, 120, 172, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(26, 120, 172, 0);
+  }
+}
+
+/* SideMenu */
+
+.sideMenu {
+  position: absolute;
+  top: 0;
+  left: -100vmin;
+  width: 100vmin;
+  height: 100%;
+  transition: all 0.5s ease;
+
+  background-color: var(--blue);
+
+  color: var(--white);
+  z-index: 99999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.sideMenu > .sideMenuList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sideMenu > .sideMenuList > li {
+  margin: 5vmin;
+}
+
+.sideMenu > .sideMenuList > li > a{
+  text-decoration: none;
+  font-size: 5vmin;
+  font-weight: 600;
+  color: var(--black);
+}
+
+#cbwMenu:checked ~ .sideMenu {
+  left: 0;
+} 
