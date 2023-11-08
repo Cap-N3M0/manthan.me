@@ -1,5 +1,5 @@
 /* system import */
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -10,6 +10,13 @@ import RcMyButtons from "./RcMyButtons";
 import "./RcHEADER.css";
 
 const RC_HEADER = (props) => {
+
+  const [sideMenuCheck, setsideMenuCheck] = useState(false);
+
+  const toggleSideMenuCheck = () =>{
+    setsideMenuCheck(!sideMenuCheck);
+  }
+
   return (
 
       <header>
@@ -32,20 +39,16 @@ const RC_HEADER = (props) => {
         {/* for small and smaller  */}
         <ul className="d-sm-flex d-md-none">
           <li className="menu">
-            <input type="checkbox" id="cbwMenu" hidden />
-            <label
-              for="cbwMenu"
-              style={{ position: "relative", inset: "3vmin 0 0 0" }}
-            >
-              <RxHamburgerMenu size={50} color="var(--black)" />
-            </label>
+            <input type="checkbox" id="cbwMenu" checked = {sideMenuCheck} hidden />
+            <RxHamburgerMenu size={50} color="var(--black)" onClick={toggleSideMenuCheck}/>
+          
 
             {/* sideMenu */}
             <div class="sideMenu d-flex">
               <ul className="sideMenuList">
-                <li><a href={"/"}>PORTFOLIO</a></li>
-                <li><a href={"/project"}>PROJECTS</a></li>
-                <li><a href={"/contact"}>CONTACT ME</a></li>
+                <li onClick={() => toggleSideMenuCheck()}><Link to={"/"} on>PORTFOLIO</Link></li>
+                <li onClick={() => toggleSideMenuCheck()}><Link to={"/project"}>PROJECTS</Link></li>
+                <li onClick={() => toggleSideMenuCheck()}><Link to={"/contact"}>CONTACT ME</Link></li>
               </ul>
             </div>
           </li>
