@@ -32,19 +32,19 @@ const RC_HEADER = (props) => {
             <Link to={"/contact"}>CONTACT ME</Link>
           </li>
           <li>
-            <RcMyButtons type={'primary'}>Download CV</RcMyButtons>
+            <RcMyButtons type={'primary'} href={'/contact'}>Download CV</RcMyButtons>
           </li>
         </ul>
 
         {/* for small and smaller  */}
         <ul className="d-sm-flex d-md-none">
           <li className="menu">
-            <input type="checkbox" id="cbwMenu" checked = {sideMenuCheck} hidden />
+            <input type="checkbox" id="cbwMenu" checked = {sideMenuCheck} onChange={()=>{}} hidden/>
             <RxHamburgerMenu size={50} color="var(--black)" onClick={toggleSideMenuCheck}/>
           
 
             {/* sideMenu */}
-            <div class="sideMenu d-flex">
+            <div className="sideMenu d-flex">
               <ul className="sideMenuList">
                 <li onClick={() => toggleSideMenuCheck()}><Link to={"/"} on>PORTFOLIO</Link></li>
                 <li onClick={() => toggleSideMenuCheck()}><Link to={"/project"}>PROJECTS</Link></li>
@@ -53,7 +53,7 @@ const RC_HEADER = (props) => {
             </div>
           </li>
           <li>
-            <RcMyButtons type={'primary'}>Download CV</RcMyButtons>
+            <RcMyButtons type={'primary'} href={'/contact'}>Download CV</RcMyButtons>
           </li>
         </ul>
       </header>
