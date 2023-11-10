@@ -1,9 +1,9 @@
 import React from  'react';
-import Button from './RcMyButtons';
+import Button from '../component/RcMyButtons';
 import './portfolio.css';
 import img from '../assets/manthan-crop.png';
 import {BsInstagram, BsLinkedin, BsWhatsapp} from 'react-icons/bs';
-import Projects from './Projects';
+import Projects from '../component/RcProjects';
 
 
 const Portfolio = () => {
@@ -40,7 +40,7 @@ const Portfolio = () => {
                 </div>
             </div>
         </div>
-        {/* <Projects /> */}
+        <Projects />
         </>
     )
             

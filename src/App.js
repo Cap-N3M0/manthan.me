@@ -1,5 +1,5 @@
-import Portfolio from './component/Portfolio';
-import Projects from './component/Projects';
+import Portfolio from './Pages/Portfolio';
+import Projects from './component/RcProjects';
 import Contact from './component/Contact';
 import RC_HEADER from './component/RcHEADER';
 import './App.css';

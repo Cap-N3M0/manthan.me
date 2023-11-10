@@ -2,10 +2,10 @@ import React from "react";
 
 import "./contact.css";
 
-const Contact = () => {
+const Contact = () => { 
   return (
-    <div className="row">
-      <div className="d-flex m-auto col col-6 justify-content-center align-items-center">
+    <div className="row col-12">
+      <div className="d-flex m-auto col-12 col-md-6 justify-content-center">
         <div className="circle-grey">
           <div>
             <span style={{ color: "var(--red)" }}>Contact</span> me
@@ -16,10 +16,10 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="m-auto col col-6">
-        <form className="col col-12 ">
+      <div className="d-flex col-12 col-md-6">
+        <form className="col-12 justify-content-center ">
 
-            <div >
+            <div>
                 <input type="text" id="name" placeholder=""></input>
             <label for="name"> NAME 
             </label><br/>

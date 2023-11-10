@@ -6,3 +6,8 @@ p> img {
     margin:  10px;
     width: 70px;
 }
+
+.card{
+    min-width: 120px !important;
+    /* background-color: black !important; */
+}

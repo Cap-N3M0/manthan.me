@@ -1,12 +1,12 @@
 import React from  'react';
-import './projects.css';
+import './RcProjects.css';
 
 import html  from '../assets/skills/html-5.png';
 import atom  from '../assets/skills/atom.png';
 import css from '../assets/skills/css.png';
 import java  from '../assets/skills/java.png';
 import js from '../assets/skills/js.png';
-// import pythn from '../assets/skills/python.png';
+import pythn from '../assets/skills/python.png';
 import sql from '../assets/skills/sql-server.png';
 
 import { Card, CardGroup} from 'react-bootstrap';
@@ -49,6 +49,16 @@ const Projects = () => {
                         <Card.Text>
                             
                                 <img src={sql} alt='sql' />
+                            
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+                <Card>
+                    <Card.Body>
+                        <Card.Title>Data Analysis</Card.Title>
+                        <Card.Text>
+                            
+                                <img src={pythn} alt='python' />
                             
                         </Card.Text>
                     </Card.Body>
