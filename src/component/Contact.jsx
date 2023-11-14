@@ -21,19 +21,19 @@ const Contact = () => {
 
             <div>
                 <input type="text" id="name" placeholder=""></input>
-            <label for="name"> NAME 
+            <label htmlFor="name"> NAME 
             </label><br/>
             </div>
 
             <div>
                 <input type="email" id="email" placeholder=""></input>
-            <label for="email">EMAIL 
+            <label htmlFor="email">EMAIL 
             </label><br/>
             </div>
 
             <div>
                 <input id="message" cols={50} placeholder=""></input>
-            <label for="message"> YOUR MESSAGE HERE
+            <label htmlFor="message"> YOUR MESSAGE HERE
             </label><br/>
             </div>
 

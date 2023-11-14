@@ -2,11 +2,14 @@ import React from  'react';
 import Button from '../component/RcMyButtons';
 import './portfolio.css';
 import img from '../assets/manthan-crop.png';
-import {BsInstagram, BsLinkedin, BsWhatsapp} from 'react-icons/bs';
+import {BsGithub, BsInstagram, BsLinkedin, BsWhatsapp} from 'react-icons/bs';
 import Projects from '../component/RcProjects';
+import Contact from '../component/Contact';
+import downloadCV from '../component/DownloadCV';
 
 
 const Portfolio = () => {
+
     return(
         <>
         <div className='hero'>
@@ -24,12 +27,22 @@ const Portfolio = () => {
                 <div className='hero-social'>
                     Find me On
                     <div className='d-flex mt-3 gap-4'>
-                        <BsInstagram size={40} href='' color='#c13584' />
-                        <BsLinkedin size={40} href='' color='var(--blue)'/>
-                        <BsWhatsapp size={40} href='' color='green'/>
+                        <BsInstagram size={40} color='#c13584' onClick={()=>{
+                            window.open('https://www.instagram.com/__cap.nemo__/')
+                        }}/>
+                        <BsLinkedin size={40} color='var(--blue)' onClick={()=>{
+                            window.open('https://www.linkedin.com/in/manthan-srivastava/')
+                        }}/>
+                        <BsWhatsapp size={40} color='green' onClick={()=>{
+                            window.open('https://wa.me/9711850100')
+                        }}/>
+
+                        <BsGithub size={40} onClick={()=>{
+                            window.open('https://github.com/Cap-N3M0')
+                        }}/>
                     </div>
                     <div className='d-flex flex-wrap gap-5' style={{marginTop : "30px"}}>
-                        <Button type='dark'> Download CV </Button>
+                        <Button type='dark' onClick = {()=>downloadCV()}> Download CV </Button>
                         <Button type='dark' href='/contact'> Hire Me </Button>
                     </div>
                 </div>
@@ -41,6 +54,7 @@ const Portfolio = () => {
             </div>
         </div>
         <Projects />
+        <Contact />
         </>
     )
             

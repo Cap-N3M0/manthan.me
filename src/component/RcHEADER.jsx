@@ -6,6 +6,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 /* user-defined import */
 import RcMyButtons from "./RcMyButtons";
+import downloadCV from "./DownloadCV";
 
 import "./RcHEADER.css";
 
@@ -32,7 +33,7 @@ const RC_HEADER = (props) => {
             <Link to={"/contact"}>CONTACT ME</Link>
           </li>
           <li>
-            <RcMyButtons type={'primary'} href={'/contact'}>Download CV</RcMyButtons>
+            <RcMyButtons type={'primary'} href='/' onClick={()=>{downloadCV()}}>Download CV</RcMyButtons>
           </li>
         </ul>
 
@@ -53,7 +54,7 @@ const RC_HEADER = (props) => {
             </div>
           </li>
           <li>
-            <RcMyButtons type={'primary'} href={'/contact'}>Download CV</RcMyButtons>
+            <RcMyButtons type={'primary'} onClick={()=>{downloadCV()}}>Download CV</RcMyButtons>
           </li>
         </ul>
       </header>
